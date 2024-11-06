@@ -30,7 +30,9 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
         registry.addInterceptor(jwtTokenUserInterceptor)
                 .addPathPatterns("/**")
                 .excludePathPatterns("/user/login")
-                .excludePathPatterns("/user/register");
+                .excludePathPatterns("/user/register")
+                .excludePathPatterns("/doc.html","/webjars/**", "/swagger-resources", "/swagger-resources/**", "/v3/**", "/favicon.ico", "Mozilla/**");
+
     }
 
     /**
