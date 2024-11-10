@@ -35,11 +35,6 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 
     }
 
-    /**
-     * 通过knife4j生成接口文档
-     * @return
-     */
-
 
     /**
      * 设置静态资源映射
